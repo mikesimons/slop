@@ -649,7 +649,7 @@ class Slop
     if flag =~ /\A-?\w=?\z/
       config[:argument] ||= flag.end_with?('=')
       objects.shift
-      flag.delete('-=')
+      flag.gsub(/[\-=]+/, '')
     end
   end
 
