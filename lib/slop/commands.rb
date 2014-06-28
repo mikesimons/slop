@@ -39,8 +39,8 @@ class Slop
       @banner = nil
       @triggered_command = nil
 
-      warn "[DEPRECATED] Slop::Commands is deprecated and will be removed in "\
-        "Slop version 4. Check out http://leejarvis.github.io/slop/#commands for "\
+      warn "[DEPRECATED] Slop::Commands is deprecated and will be removed in " +
+        "Slop version 4. Check out http://leejarvis.github.io/slop/#commands for " +
         "a new implementation of commands."
 
       if block_given?
